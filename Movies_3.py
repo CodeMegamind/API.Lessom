@@ -44,5 +44,5 @@ while True:
 
     if Diddy == "5":
         print("Delete")
-        id = input("input id: ")
+        Id = input("input id: ")
         res = requests.delete(f"https://9958d672d07b.ngrok-free.app/movies/{id}")
