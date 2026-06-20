@@ -15,6 +15,27 @@ while True:
 
     if apple == "4":
         city = input("Choose Your City : ")
-        res = requests.get("https://65fdb6f97259.ngrok-free.app/weather", params={"city": city})
+        res = requests.get("https://apilesson2.vercel.app/weather", params={"city": city})
         weather = res.json()
-        print(weather)
+        print("City", weather["city"])
+        print("Latitude", weather["latitude"])
+        print("Longitude", weather["longitude"])
+        print("Temperature", weather["temperature_c"])
+        print("Wind_Speed", weather["wind_speed"])
+
+    if apple == "1":
+        res = requests.get("https://apilesson2.vercel.app/tasks")
+        tasks = res.json()
+        print("Tasks")
+        print(tasks)
+
+    if apple == "2":
+        task = input("Create Your Task : ")
+        orange={
+            "title": task
+        }
+        res = requests.post("https://apilesson2.vercel.app/tasks", json=orange)
+        print(res.text)
+
+
+

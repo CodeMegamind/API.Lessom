@@ -1,0 +1,29 @@
+body{
+background: #f2f2f2;
+margin:0;
+}
+.Block {
+background-color:#262626;
+color:#FFFFFF;
+margin:0px;
+padding:10px 20px;
+}
+.Block a{
+margin-right:20px;
+color: white;
+  text-decoration: none;
+}
+.O_Block {
+border: 1px solid #ddd;
+margin:auto;
+width:800px;
+background: #ffffff;
+padding:20px;
+}
+.Drake {
+border: 1px solid #ddd;
+margin:10px 0;
+width: 750px;
+background: #f2f2f2;
+padding: 20px;
+}
